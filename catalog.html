@@ -22,77 +22,89 @@
     </header>
 
     <main class="container">
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!--здесь будет форма-->
-      </section>
+      <div class="contant-wrapper">
 
-      <section class="catalog">
-        <b>Сортировать:</b>
-        <ul class="sort-list">
-          <li class="sort-item sort-item-current">По цене</li>
-          <li class="sort-item">По типу</li>
-          <li class="sort-item">По названию</li>
-        </ul>
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <!--здесь будет форма-->
+        </section>
 
-        <h2 class="visually-hidden">Список шаблонов</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
-            <div>
-              <h3 class="catalog-item-title">Sedona</h3>
-              <p>Информационный сайт для туристов</p>
-              <a class="button" href="#">9900</a>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
-            <div>
-              <h3 class="catalog-item-title">Pink app</h3>
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button" href="#">9900</a>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
-            <div>
-              <h3 class="catalog-item-title">Barbershop</h3>
-              <p>Сайт салоны красоты. Для мужчин, да.</p>
-              <a class="button" href="#">9900</a>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
-            <div>
-              <h3 class="catalog-item-title">Mishka</h3>
-              <p class="catalog-item-title">Интернет-магазин вязаных игрушек</p>
-              <a class="button" href="#">9900</a>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="A plus">
-            <div>
-              <h3 class="catalog-item-title">A plus</h3>
-              <p>Лендинг курсов повышения квалификации</p>
-              <a class="button" href="#">9900</a>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
-            <div>
-              <h3 class="catalog-item-title">Кваст</h3>
-              <p>Промо-сайт производителя крафтового кваса</p>
-              <a class="button" href="#">9900</a>
-            </div>
-          </li>
-        </ul>
+        <div class="catalog-right-side">
 
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-        </ul>
-      </section>
+          <section class="sort">
+            <b>Сортировать:</b>
+            <ul class="sort-list">
+              <li class="sort-item sort-item-current"><a href="#">По цене</a></li>
+              <li class="sort-item"><a href="#">По типу</a></li>
+              <li class="sort-item"><a href="#">По названию</a></li>
+              <li class="sort-item-descending"><a href="#">По убыванию</a></li>
+              <li class="sort-item-ascending"><a href="#">По возрастанию</a></li>
+            </ul>
+          </section>
+
+          <section class="catalog">
+            <h2 class="visually-hidden">Список шаблонов</h2>
+            <ul class="catalog-list">
+              <li class="catalog-item">
+                <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+                <div>
+                  <h3 class="catalog-item-title">Sedona</h3>
+                  <p>Информационный сайт для туристов</p>
+                  <a class="button" href="#">9900</a>
+                </div>
+              </li>
+              <li class="catalog-item">
+                <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
+                <div>
+                  <h3 class="catalog-item-title">Pink app</h3>
+                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <a class="button" href="#">9900</a>
+                </div>
+              </li>
+              <li class="catalog-item">
+                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
+                <div>
+                  <h3 class="catalog-item-title">Barbershop</h3>
+                  <p>Сайт салоны красоты. Для мужчин, да.</p>
+                  <a class="button" href="#">9900</a>
+                </div>
+              </li>
+              <li class="catalog-item">
+                <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
+                <div>
+                  <h3 class="catalog-item-title">Mishka</h3>
+                  <p class="catalog-item-title">Интернет-магазин вязаных игрушек</p>
+                  <a class="button" href="#">9900</a>
+                </div>
+              </li>
+              <li class="catalog-item">
+                <img src="img/img-aplus.jpg" width="360" height="576" alt="A plus">
+                <div>
+                  <h3 class="catalog-item-title">A plus</h3>
+                  <p>Лендинг курсов повышения квалификации</p>
+                  <a class="button" href="#">9900</a>
+                </div>
+              </li>
+              <li class="catalog-item">
+                <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
+                <div>
+                  <h3 class="catalog-item-title">Кваст</h3>
+                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <a class="button" href="#">9900</a>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="pagination">
+            <ul class="pagination-list">
+              <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+              <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </main>
 
     <footer class="main-footer">
