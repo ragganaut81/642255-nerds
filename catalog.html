@@ -47,50 +47,50 @@
             <ul class="catalog-list">
               <li class="catalog-item">
                 <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
-                <div>
+                <div class="catalog-item-information">
                   <h3 class="catalog-item-title">Sedona</h3>
-                  <p>Информационный сайт для туристов</p>
-                  <a class="button" href="#">9900</a>
+                  <p class="catalog-item-description">Информационный сайт для туристов</p>
+                  <a class="button catalog-item-button" href="#">9900</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
-                <div>
+                <div class="catalog-item-information">
                   <h3 class="catalog-item-title">Pink app</h3>
-                  <p>Продуктовый лендинг приложения для iOS и Android</p>
-                  <a class="button" href="#">9900</a>
+                  <p class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</p>
+                  <a class="button catalog-item-button" href="#">9900</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
-                <div>
+                <div class="catalog-item-information">
                   <h3 class="catalog-item-title">Barbershop</h3>
-                  <p>Сайт салоны красоты. Для мужчин, да.</p>
-                  <a class="button" href="#">9900</a>
+                  <p class="catalog-item-description">Сайт салоны красоты. Для мужчин, да.</p>
+                  <a class="button catalog-item-button" href="#">9900</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
-                <div>
+                <div class="catalog-item-information">
                   <h3 class="catalog-item-title">Mishka</h3>
-                  <p class="catalog-item-title">Интернет-магазин вязаных игрушек</p>
-                  <a class="button" href="#">9900</a>
+                  <p class="catalog-item-description">Интернет-магазин вязаных игрушек</p>
+                  <a class="button catalog-item-button" href="#">9900</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <img src="img/img-aplus.jpg" width="360" height="576" alt="A plus">
-                <div>
+                <div class="catalog-item-information">
                   <h3 class="catalog-item-title">A plus</h3>
-                  <p>Лендинг курсов повышения квалификации</p>
-                  <a class="button" href="#">9900</a>
+                  <p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
+                  <a class="button catalog-item-button" href="#">9900</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
-                <div>
+                <div class="catalog-item-information">
                   <h3 class="catalog-item-title">Кваст</h3>
-                  <p>Промо-сайт производителя крафтового кваса</p>
-                  <a class="button" href="#">9900</a>
+                  <p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
+                  <a class="button catalog-item-button" href="#">9900</a>
                 </div>
               </li>
             </ul>
@@ -101,53 +101,58 @@
               <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
+              <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
             </ul>
           </section>
         </div>
       </div>
     </main>
 
-    <footer class="main-footer">
-      <div class="footer-contacts">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <b>Nёrds Design Studio</b>
-        <p>
-          191186, Санкт-Петербург,
-          ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p>
-          тел. +7(812)275-75-75
-        </p>
-        <a class="button" href="#">Напишите нам</a>
-      </div>
-      <div class="footer-social">
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
-          <li>
-            <a class="social-button" href="#">
-              <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <img src="img/fb-icon.svg" width="12" height="22" alt="Фэйсбук">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
-            </a>
-          </li>
-        </ul>
+    <footer class="page-footer">
+      <div class="content-wrapper">
+        <section class="contacts">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <b class="contacts-title">Nёrds Design Studio</b>
+          <address class="address">
+            191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8
+          </address>
+          <a href="#">
+            тел. +7(812)275-75-75
+          </a>
+          <a class="button button-contacts" href="#">Напишите нам</a>
+        </section>
+        <section class="social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a href="#">
+                <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="#">
+                <img src="img/fb-icon.svg" width="12" height="22" alt="Фэйсбук">
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="#">
+                <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
+              </a>
+            </li>
+          </ul>
+          <p class="social-text"><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
       </div>
     </footer>
+
     <section class="modal modal-write-us">
       <h2>Напишите нам</h2>
       <p>Ваше имя:</p>
       <p>Ваш e-mail:</p>
       <p>Текст письма:</p>
       <a class="button" href="#">Отправить</a>
+      <a class="button" href="#">Закрыть</a>
     </section>
   </body>
 </html>
