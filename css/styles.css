@@ -1,4 +1,168 @@
 body {
-    margin: 0;
-    padding
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", san-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.page-header {
+  background-color: #eeeeee;
+}
+
+.user-menu-list,
+.main-menu {
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.main-menu-list,
+.user-menu-list {
+  list-style: none;
+}
+
+.main-menu-list a:hover,
+.user-menu-list a:hover {
+  color: #fb565a;
+}
+
+.main-menu-list a:focus,
+.user-menu-list a:focus {
+  color: #aaaaaa;
+}
+
+.slide-1 {
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-color: #eeeeee;
+}
+.slide-2 {
+  background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  background-color: #eeeeee;
+}
+.slide-3 {
+  background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-color: #eeeeee;
+}
+
+.slide b {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.button {
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
+
+.slide-button:hover,
+.button-services-1:hover {
+  background-color: #e74243;
+}
+
+.slide-button:focus,
+.button-services-1:focus {
+  background-color: #d7373b;
+}
+
+.services-list,
+.production-list {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button-services-2 {
+  background-color: #00ca74;
+}
+
+.button-services-2:hover {
+  background-color: #00bc6c;
+}
+
+.button-services-2:focus {
+  background-color: #00aa62;
+}
+
+.button-services-3 {
+  background-color: #efc84a;
+}
+
+.button-services-3:hover {
+  background-color: #eab534;
+}
+
+.button-services-3:focus {
+  background-color: #e5a722;
+}
+
+.studio-lead {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.production-title,
+.table-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.table-percent {
+  font-size: 45px;
+  line-height: 10,06px;
+  font-weight: 700;
+}
+
+.table-percent sup {
+  font-size: 28px;
+}
+
+.partners-list,
+.social-list {
+  list-style: none;
+}
+
+.map {
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-color: #eeeeee;
+}
+
+.partners-logo {
+  opacity: 0.2;
+}
+
+.partners-logo:hover {
+  opacity: 1.0;
+}
+
+.partners-logo:focus {
+  opacity: 0.1;
 }
