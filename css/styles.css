@@ -20,6 +20,10 @@ a {
   background-color: #eeeeee;
 }
 
+.main-header-logo:focus {
+  opacity: 0.3;
+}
+
 .user-menu-list,
 .main-menu {
   line-height: 30px;
@@ -153,6 +157,7 @@ a {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-color: #eeeeee;
+  background-size: cover;
 }
 
 .partners-logo {
@@ -165,4 +170,140 @@ a {
 
 .partners-logo:focus {
   opacity: 0.1;
+}
+
+.social-text {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.write-us-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.write-us-item {
+  line-height: 18px;
+  font-weight: 700;
+
+  background-color: #ffffff;
+}
+
+.write-us-item input[type=text],
+.write-us-item input[type=email],
+.write-us-item textarea {
+  border: 2px solid;
+  border-color: : #e4e8e9;
+}
+
+.write-us-item input[type=text]:hover,
+.write-us-item input[type=email]:hover,
+.write-us-item textarea:hover {
+  border-color: #cdd0d2;
+}
+
+.write-us-item input[type=text]:focus,
+.write-us-item input[type=email]:focus,
+.write-us-item textarea:focus {
+  border-color: #555555;
+}
+
+
+.filters-form fieldset {
+  border: none;
+}
+
+.fieldset-item-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.fieldset-item label {
+  line-height: 20px;
+}
+
+label.filter-label,
+.filter-input {
+  opacity: 0.4;
+}
+
+label.filter-label:hover,
+label.filter-label:focus,
+.filter-input:hover,
+.filter-input:focus {
+  opacity: 1.0;
+}
+
+label.filter-label:disabled,
+.filter-input:disabled {
+  opacity: 0.1;
+}
+
+.filter-button {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.sort h2 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-item a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.sort-item a:hover {
+  opacity: 0.6;
+}
+
+.sort-item a:focus {
+  opacity: 1.0;
+}
+
+a.arrow {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 0;
+  opacity: 0.2;
+}
+
+.arrow::before {
+  content: "";
+  border: 20px solid #000000;
+  border-right-width: 10px;
+  border-left-width: 10px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  display: inline-block;
+}
+
+a.arrow:hover {
+  opacity: 0.6;
+}
+
+a.arrow:focus {
+  opacity: 1.0;
+}
+
+.arrow-up::before {
+    border-top-width: 0;
+}
+
+.arrow-down::before {
+    border-bottom-width: 0;
+
 }
