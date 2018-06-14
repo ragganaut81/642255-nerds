@@ -2,11 +2,11 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", "Arial", san-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: #283136;
 
   background-color: #ffffff;
 }
@@ -18,6 +18,10 @@ a {
 
 .page-header {
   background-color: #eeeeee;
+}
+
+.main-header-logo:hover {
+  opacity: 0.8;
 }
 
 .main-header-logo:focus {
@@ -69,6 +73,7 @@ a {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  color: #000000;
 }
 
 .button {
@@ -100,6 +105,7 @@ a {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .button-services-2 {
@@ -130,22 +136,26 @@ a {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  color: #000000;
 }
 
 .production-title,
 .table-title {
   font-weight: 700;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .table-percent {
   font-size: 45px;
   line-height: 10,06px;
   font-weight: 700;
+  color: #000000;
 }
 
 .table-percent sup {
   font-size: 28px;
+  color: #000000;
 }
 
 .partners-list,
@@ -158,6 +168,21 @@ a {
   background-repeat: no-repeat;
   background-color: #eeeeee;
   background-size: cover;
+}
+.contacts-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts,
+.address,
+.contacts-tel {
+  font-style: normal;
+  line-height: 18px;
+  color: #666666;
 }
 
 .partners-logo {
@@ -176,12 +201,14 @@ a {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
+  color: #000000;
 }
 
 .write-us-title {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  color: #000000;
 }
 
 .write-us-item {
@@ -195,7 +222,7 @@ a {
 .write-us-item input[type=email],
 .write-us-item textarea {
   border: 2px solid;
-  border-color: : #e4e8e9;
+  border-color: #e4e8e9;
 }
 
 .write-us-item input[type=text]:hover,
