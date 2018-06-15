@@ -90,8 +90,11 @@ a {
   background-color: #e74243;
 }
 
+.button:focus,
 .slide-button:focus,
 .button-services-1:focus {
+  color: #e37376;
+  box-shadow: inset 0 3px 0 0 #c13135;
   background-color: #d7373b;
 }
 
@@ -117,6 +120,8 @@ a {
 }
 
 .button-services-2:focus {
+  color: #4dc491;
+  box-shadow: inset 0 3px 0 0 #009958;
   background-color: #00aa62;
 }
 
@@ -129,6 +134,8 @@ a {
 }
 
 .button-services-3:focus {
+  color: #edc265;
+  box-shadow: inset 0 3px 0 0 #ce961f;
   background-color: #e5a722;
 }
 
@@ -214,6 +221,7 @@ a {
 .write-us-item {
   line-height: 18px;
   font-weight: 700;
+  color: #000000;
 
   background-color: #ffffff;
 }
@@ -270,9 +278,22 @@ label.filter-label:disabled,
   opacity: 0.1;
 }
 
-.filter-button {
+.filter-button,
+.pagination-item {
   color: #000000;
   background-color: #eeeeee;
+}
+
+.filter-button:hover,
+.pagination-item:hover {
+  background-color: #dfdfdf
+}
+
+.filter-button:focus,
+.pagination-item a:focus {
+  color: #959595;
+  box-shadow: inset 0 3px 0 0 #bfbfbf;
+  background-color: #d5d5d5;
 }
 
 .sort h2 {
@@ -334,3 +355,64 @@ a.arrow:focus {
     border-bottom-width: 0;
 
 }
+
+.catalog-list,
+.pagination-list {
+  list-style: none;
+}
+
+.catalog-item:hover {
+  box-shadow: 0 10px 10px 0 #eeeeee;
+}
+
+.catalog-item::before {
+  content: "";
+  width: 360px;
+  height: 40px;
+  background-image: url("../img/browser.svg");
+  background-color: #eeeeee;
+  display: block;
+  opacity: 0.12;
+}
+
+.catalog-item:hover::before {
+  opacity: 1.0;
+}
+
+.catalog-item-information {
+  text-align: center;
+  opacity: 0.0;
+}
+
+.catalog-item:hover .catalog-item-information {
+  opacity: 1.0;
+}
+
+.catalog-item-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-item-description {
+  line-height: 18px;
+  color: #666666;
+}
+
+.catalog-item-button:hover {
+  background-color: #e74243;
+}
+
+.catalog-item-button:focus {
+  box-shadow: inset 0 3px 0 0 #c13135;
+  background-color: #d7373b;
+}
+
+.pagination-item {
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
