@@ -1,5 +1,12 @@
-html { box-sizing: border-box; }
-*, *::before, *::after { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   min-width:1200px;
@@ -20,6 +27,29 @@ a {
   color: #000000;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header {
   margin: 0;
   background-color: #eeeeee;
@@ -38,12 +68,17 @@ a {
 }
 
 .page-header h1 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
   text-align: center;
-  padding-bottom: 120px;
+  padding-bottom: 108px;
+  padding-top: 33px;
 }
 
 .main-header-logo {
   width: 160px;
+  padding-top: 54px;
 }
 
 .main-header-logo:hover,
@@ -56,7 +91,7 @@ a {
 }
 
 .main-menu {
-  width: 440px;
+  width: 604px;
 }
 
 .user-menu {
@@ -69,13 +104,29 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
+  padding-top: 55px;
 
   background-color: #eeeeee;
+}
+
+.main-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 604px;
 }
 
 .main-menu-list,
 .user-menu-list {
   list-style: none;
+  margin: 0;
+}
+
+.main-menu-list a,
+.user-menu-list a {
+  display: block;
+  padding: 26px 0 17px 46px;
+  vertical-align: middle;
 }
 
 .main-menu-list a:hover,
@@ -91,41 +142,148 @@ a {
 }
 
 .slider {
+  position: relative;
   margin-bottom: 80px;
 
   background-color: #eeeeee;
+}
+
+.slide {
+  display: none;
+  padding: 80px 0 60px 0;
 }
 
 .slide-1 {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-color: #eeeeee;
+  background-position: 93.3% 10px;
 }
 .slide-2 {
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
   background-color: #eeeeee;
+  background-position: 100% 0;
 }
 .slide-3 {
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-color: #eeeeee;
+  background-position: 100% 20px;
 }
 
 .slide b {
+  display: block;
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 26px;
+  margin-top: -10px;
+
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: #000000;
 }
 
+.slide-text {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 39px;
+  margin-top: 16px;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 49.5%;
+  bottom: 112px;
+  z-index: 1;
+
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls label {
+  position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  margin: 8px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+
+  width: 18px;
+  height: 18px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+}
+#product-1:checked ~ .slide-1 {
+  display: block;
+}
+
+#product-2:checked ~ .slide-2 {
+  display: block;
+}
+
+#product-3:checked ~ .slide-3 {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+
+  background-color: inherit;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.slide-button {
+  margin-bottom: 20px;
+}
+
 .button {
+  display: block;
+  width: 240px;
+  padding: 17px 0 15px;
+
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
+  text-decoration: none;
 
   background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
 }
 
 .button:hover,
