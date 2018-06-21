@@ -337,6 +337,17 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+  margin: 18px 0 15px;
+}
+
+.services-item-text {
+  width: 250px;
+}
+.button-services-1,
+.button-services-2,
+.button-services-3 {
+  width: 160px;
+  margin-top: 32px;
 }
 
 .button-services-2 {
@@ -377,6 +388,7 @@ input[type="radio"].visually-hidden {
 
 .studio-left {
   width: 660px;
+  margin-top: 36px;
 }
 
 .studio-right {
@@ -384,10 +396,12 @@ input[type="radio"].visually-hidden {
 }
 
 .studio-lead {
+  display: inline-block;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: #000000;
+  margin-bottom: 17px;
 }
 
 .production-title,
