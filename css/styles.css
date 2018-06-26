@@ -1082,7 +1082,8 @@ a.arrow:active {
   padding: 0;
   margin:0;
   width: 360px;
-  margin-bottom: 26px;
+  height: 616px;
+  margin-bottom: 33px;
   position: relative;
 }
 
@@ -1106,13 +1107,13 @@ a.arrow:active {
 
 .catalog-item-information {
   text-align: center;
-  opacity: 1.0;
+  opacity: 0.0;
   position: absolute;
   bottom: 0;
   width: 360px;
 
 
-  background-color: #ffffff;
+  background-color: #eeeeee;
 }
 
 .catalog-item:hover .catalog-item-information {
@@ -1148,7 +1149,7 @@ a.arrow:active {
 .catalog-item-button {
   width: 200px;
   margin-left: 80px;
-  margin-bottom: 50px;
+  margin-bottom: 43px;
 
   font-size: 16px;
   line-height: 18px;
@@ -1164,13 +1165,36 @@ a.arrow:active {
   background-color: #d7373b;
 }
 
+.catalog {
+  margin-bottom: 27px;
+}
+
 .pagination-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+  width: 443px;
   margin-bottom: 65px;
 }
 
 .pagination-item {
+  width: 50px;
+  height: 50px;
+  padding-top: 17px;
+
+  text-align: center;
+
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
+.pagination-item-next {
+  width: 260px;
+}
+
+.pagination-list {
+  margin-bottom: 60px;
+}
