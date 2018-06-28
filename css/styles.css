@@ -53,6 +53,7 @@ input[type="radio"].visually-hidden {
 .page-header {
   margin: 0;
   background-color: #eeeeee;
+  margin-top: -6px;
 }
 
 .content-wrapper {
@@ -549,14 +550,17 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
+  position: absolute;
+  left: 50%;
+  margin-left: -720px;
+
   width: 1440px;
   height: 416px;
-  margin-left: 72px;
 
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-color: #eeeeee;
-  background-size: cover;
+  background-position: center;
 }
 
 .contacts {
@@ -607,12 +611,12 @@ input[type="radio"].visually-hidden {
   list-style: none;
   display: flex;
   width: 259px;
-  margin: 70px 0 70px -39px;
+  margin: 486px 0 70px -39px;
 }
 
 .social-text {
   width: 560px;
-  margin: 75px 200px 70px 0;
+  margin: 491px 200px 70px 0;
   line-height: 32px;
 }
 
