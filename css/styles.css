@@ -129,8 +129,21 @@ input[type="radio"].visually-hidden {
   padding: 26px 0 17px 45px;
   vertical-align: middle;
 }
+
+.main-menu-list-item,
 .user-menu-list-item {
   position: relative;
+}
+
+.active a::after {
+  position: absolute;
+  content: "";
+  width: 65%;
+  height: 2px;
+  top: 60px;
+  left: 45px;
+
+  background-color: #fb565a;
 }
 
 .user-menu-list-item::before {
@@ -808,8 +821,8 @@ input[type="radio"].visually-hidden {
   border-color: #555555;
 }
 
-.write-us-item input:invalid {
-  border: 2px solid #e74246;
+.write-us-item input[type=email]:invalid {
+  border-color: #e74246;
   color: #e74246;
 }
 
