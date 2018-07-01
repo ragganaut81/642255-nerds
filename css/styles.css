@@ -572,12 +572,17 @@ input[type="radio"].visually-hidden {
 
 .map {
   width: 100%;
-  height: 416px;
+  min-height: 416px;
 
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-color: #eeeeee;
   background-position: center;
+}
+
+.map iframe {
+  display: block;
+  border: 0;
 }
 
 .contacts {
