@@ -690,6 +690,7 @@ input[type="radio"].visually-hidden {
 }
 
 .social-lead {
+  display: inline-block;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -989,6 +990,7 @@ input[type="radio"].visually-hidden {
 }
 
 .fieldset-item-title {
+  margin-bottom: 8px;
   padding-top: 18px;
   font-size: 18px;
   line-height: 30px;
@@ -1008,7 +1010,7 @@ input[type="radio"].visually-hidden {
 
 .range-filter {
   width: 260px;
-  margin-top: 43px;
+  margin-top: 35px;
 }
 
 .range-controls {
@@ -1100,7 +1102,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-label {
-  margin: 8px 0 16px;
+  margin: 0px 0 16px;
   padding-left: 36px;
 
   position: relative;
@@ -1219,7 +1221,7 @@ label.filter-label:disabled,
       -ms-flex-pack: justify;
           justify-content: space-between;
 
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 }
 
 .sort h2 {
@@ -1270,6 +1272,7 @@ label.filter-label:disabled,
 
 a.arrow {
   display: inline-block;
+  vertical-align: top;
   width: 11px;
   height: 10px;
   margin-right: 10px;
@@ -1381,10 +1384,11 @@ a.arrow:active {
 }
 
 .catalog-item-description {
+  width: 240px;
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-left: 2px;
+  margin-left: 62px;
   margin-bottom: 30px;
 
   line-height: 18px;
